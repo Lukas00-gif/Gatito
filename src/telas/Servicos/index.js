@@ -30,7 +30,6 @@ const servicos = [
 export default function Servicos(){  
     return <SafeAreaView>
             <StatusBar/>
-             <Text> Servicos! </Text>
              <FlatList
                 data={servicos}
                 renderItem = {({item}) => <Item {...item} /> }
