@@ -11,24 +11,27 @@ const servicos = [
             id:1,
             nome: "Banho",
             preco: 79.50,
-            descricao: "Realizamos a higiene do seu pet"
+            descricao: "Realizamos a higiene do seu pet",
+            quantidade: 1
     },
     {
             id:2,
             nome: "Vacina V4",
             preco: 178.50,
-            descricao: "Imunize seu pet"
+            descricao: "Imunize seu pet",
+            quantidade: 2
     },
     {
             id:3,
             nome: "Vacina antirrabica",
             preco: 80.90,
-            descricao: "Vacina da raiva"
+            descricao: "Vacina da raiva",
+            quantidade: 2
     }
 ]
 
 // isso serve para o note do celular
-export default function Servicos(){  
+export default function Carrinho(){  
     return <TelaPadrao>
                 <FlatList
                         data={servicos}
